@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/*
+ * utilities
+ */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/*
+ * header style
+*/
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid #000;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+label {
+  padding: 10px 0;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+}
