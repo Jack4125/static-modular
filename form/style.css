@@ -1,3 +1,6 @@
+:root {
+  --theme-color: rgb(162, 38, 187);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,11 +9,19 @@
 html {
   font-size: 16px;
 }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--theme-color);
 }
 
 /*
@@ -22,14 +33,12 @@ ul {
   margin: auto;
 }
 
-/*
- * header style
-*/
+/* form */
 form {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 10px 20px 20px 20px;
-  border: 1px solid #000;
+  margin: 60px 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 .form-group {
@@ -39,7 +48,8 @@ form {
 }
 
 label {
-  padding: 10px 0;
+  padding: 15px 0 10px 0;
+  /* color: var(--theme-color); */
 }
 
 input,
@@ -47,7 +57,29 @@ select,
 textarea {
   padding: 10px;
   font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.btn-right {
+  text-align: right;
+}
+
+.form-btn {
+  font-size: 16px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  color: #fff;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
+  /* form */
+  form {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
 }

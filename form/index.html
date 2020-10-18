@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>form</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <!-- re captcha -->
+  <!-- https://developers.google.com/recaptcha/docs/v3 -->
+  <!-- https://www.google.com/recaptcha/admin/create -->
 
-<body>
+  <body>
+    <!-- start -->
+    <!-- form -->
+    <section>
+      <form>
+        <h2>Contact</h2>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="multiple-choice">Example multiple select</label>
+          <select id="multiple-choice" multiple>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="paragraph">Example textarea</label>
+          <textarea id="paragraph" rows="3"></textarea>
+        </div>
 
-  <!-- start -->
-  <form>
-    <div class="form-group">
-      <label for="email">Email address</label>
-      <input type="email" class="form-control" id="email" placeholder="email">
-    </div>
-    <div class="form-group">
-      <label for="multiple-choice">Example multiple select</label>
-      <select id="multiple-choice" multiple>
-        <option>1</option>
-        <option>2</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="paragraph">Example textarea</label>
-      <textarea id="paragraph" rows="3"></textarea>
-    </div>
-  </form>
-  <!-- end -->
+        <div class="btn-right">
+          <button class="form-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- end -->
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

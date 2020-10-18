@@ -1,3 +1,6 @@
+:root {
+  --theme-color: rgb(162, 38, 187);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,17 +30,25 @@ ul {
 
 /* info */
 .info {
-  padding: 20px 0;
+  padding: 60px 0;
   display: grid;
   row-gap: 15px;
+  border-bottom: 1px solid #ccc;
 }
 
-img {
+.info p {
+  margin: 20px 0 35px 0;
+  font-size: 20px;
+}
+
+.info img {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 10px 20px 0 #8a8a8a;
 }
 
 @media screen and (min-width: 600px) {
+  /* info */
   .info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
