@@ -1,6 +1,5 @@
 document.querySelector('.menu-btn').addEventListener('click', () => {
   document.querySelector('.nav-list').classList.add('nav-show');
-  // nav control
   document.querySelector('.nav-control').classList.add('nav-control-show');
 })
 

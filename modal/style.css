@@ -1,0 +1,92 @@
+:root {
+  --theme-color: rgb(162, 38, 187);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/*
+ * utilities
+ */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.hide {
+  display: none !important;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  position: relative;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-close {
+  cursor: pointer;
+  color: grey;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  border: none;
+}
+
+.modal p {
+  font-size: 20px;
+  padding: 0 0 20px 0;
+}
+
+.modal-btn {
+  font-size: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.modal-btn-1 {
+  background: transparent;
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
+}
+
+.modal-btn-2 {
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+}
