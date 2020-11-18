@@ -6,9 +6,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 16px;
-}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -17,11 +14,6 @@ a {
 }
 ul {
   list-style: none;
-}
-h4 {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--theme-color);
 }
 
 /*
@@ -34,47 +26,53 @@ h4 {
 }
 
 /* footer */
-.footer-main {
-  padding: 20px 0 30px 0;
+.footer-top {
+  padding: 1.5rem 0;
 }
 
 .footer-list {
-  margin: 20px 0;
+  margin-bottom: 1rem;
 }
 
-.footer-main li {
-  width: 100%;
-  padding: 5px 0 10px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.footer-main li:nth-child(1) {
-  border-bottom: 1px solid var(--theme-color);
-}
-
-.footer-main a {
-  color: #000;
-  font-size: 14px;
-}
-
-.footer-main a:hover {
+.footer-list h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
   color: var(--theme-color);
 }
 
-.footer-copyright {
+.footer-top li {
+  width: 100%;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-top li:nth-child(1) {
+  border-bottom: 1px solid var(--theme-color);
+}
+
+.footer-top a {
+  color: #000;
+}
+
+.footer-top a:hover {
+  color: var(--theme-color);
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 20px;
+  padding: 1.5rem;
   border: 1px solid #ccc;
 }
 
 @media screen and (min-width: 600px) {
   /* footer */
-  .footer-main {
+  .footer-top {
+    padding: 2rem 0;
     display: flex;
     justify-content: space-evenly;
   }
 
   .footer-list {
-    width: 200px;
+    width: 250px;
   }
 }

@@ -6,9 +6,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 16px;
-}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -17,11 +14,6 @@ a {
 }
 ul {
   list-style: none;
-}
-h2 {
-  font-size: 30px;
-  font-weight: 400;
-  color: var(--theme-color);
 }
 
 /*
@@ -36,9 +28,14 @@ h2 {
 /* form */
 form {
   max-width: 600px;
-  margin: 60px 20px;
-  padding: 20px;
+  padding: 2rem;
   border: 1px solid #ccc;
+}
+
+form h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--theme-color);
 }
 
 .form-group {
@@ -47,16 +44,15 @@ form {
   flex-flow: column nowrap;
 }
 
-label {
-  padding: 15px 0 10px 0;
-  /* color: var(--theme-color); */
+form label {
+  padding: 0.8rem 0;
 }
 
 input,
 select,
 textarea {
-  padding: 10px;
-  font-size: 16px;
+  padding: 0.8rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
 }
 
@@ -65,9 +61,9 @@ textarea {
 }
 
 .form-btn {
-  font-size: 16px;
-  padding: 10px 25px;
-  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 0.9rem 2rem;
+  margin-top: 2rem;
   background: var(--theme-color);
   border: 1px solid var(--theme-color);
   color: #fff;
@@ -78,8 +74,8 @@ textarea {
   /* form */
   form {
     max-width: 600px;
-    margin: 60px auto;
-    padding: 20px;
+    margin: 3rem auto;
+    padding: 1.5rem;
     border: 1px solid #ccc;
   }
 }

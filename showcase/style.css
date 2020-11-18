@@ -6,9 +6,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 16px;
-}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -17,10 +14,6 @@ a {
 }
 ul {
   list-style: none;
-}
-h1 {
-  font-size: 40px;
-  font-weight: 400;
 }
 
 /*
@@ -34,14 +27,20 @@ h1 {
 
 /* showcase */
 .showcase {
-  /* background: url('images/mobile.jpg') no-repeat center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('images/mobile.jpg') no-repeat center;
   background-size: cover; */
   width: 100%;
   height: auto;
   border-bottom: 1px solid #ccc;
 }
 
-.showcase-inner {
+.showcase h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.showcase-content {
   height: 500px;
   display: flex;
   flex-flow: column nowrap;
@@ -50,15 +49,15 @@ h1 {
 }
 
 .showcase p {
-  margin: 20px 0 35px 0;
-  font-size: 20px;
+  margin: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .action-btn {
-  font-size: 20px;
-  padding: 10px 30px;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 1rem 1rem;
 }
 
 .action-btn-1 {
