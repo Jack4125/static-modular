@@ -15,6 +15,9 @@ a {
 ul {
   list-style: none;
 }
+html {
+  font-size: 14px;
+}
 
 /*
  * utilities
@@ -62,7 +65,7 @@ textarea {
 
 .form-btn {
   font-size: 1.2rem;
-  padding: 0.9rem 2rem;
+  padding: 0.7rem 1.6rem;
   margin-top: 2rem;
   background: var(--theme-color);
   border: 1px solid var(--theme-color);
@@ -71,10 +74,14 @@ textarea {
 }
 
 @media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
   /* form */
   form {
     max-width: 600px;
-    margin: 3rem auto;
+    margin: 4rem auto;
     padding: 1.5rem;
     border: 1px solid #ccc;
   }

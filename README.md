@@ -1,12 +1,12 @@
-# component-styles
+# modular-website-components
 
-Bootstrap is too big. But I'm also too lazy to write everything all over again when I create a new website.
+Just copy and paste the HTML, CSS, and JavaScript of the needed website component.
 
-So this is the modular basic styles of a website.
-
-<!-- accessibility https://www.youtube.com/watch?v=0hqhAIjE_8I -->
-
-<!-- Styles -->
+<!-- Interesting styles -->
+<!-- https://nicepage.com/c/pets-animals-html-templates -->
 <!-- https://ak.hypergryph.com/index -->
-<!-- https://www.pinterest.com/pin/17170042316722618/ -->
-<!-- https://www.pinterest.com/pin/733523858040376500/ -->
+
+<!--
+  background: #f6eee2;
+  color: #084D60;
+-->
