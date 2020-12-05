@@ -77,14 +77,14 @@ html {
   }
 
   /* gallery */
-  .gallery-mid {
-    padding: 0;
+  .gallery {
+    padding: 5rem 0;
   }
 
   .img-list {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 1rem;
     padding: 0;
   }

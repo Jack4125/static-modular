@@ -32,7 +32,7 @@ html {
 .services {
   padding: 2rem 0;
   display: grid;
-  row-gap: 1rem;
+  row-gap: 2rem;
   border-bottom: 1px solid #ccc;
 }
 
@@ -62,16 +62,23 @@ html {
   .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: 2rem;
+    padding: 5rem 0;
   }
 
-  /* .services-img-left */
-  /* .services-img-right */
+  /* left-right ordering only apples on desktop */
+  .services-left {
+    order: -1;
+  }
 
-  .services article {
-    padding: 4rem 0;
+  .services article,
+  .services picture {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+  }
+
+  .services article {
+    padding: 3rem 0;
   }
 }

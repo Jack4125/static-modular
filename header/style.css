@@ -45,8 +45,14 @@ nav {
   margin-right: auto;
 }
 
-.logo-img {
-  width: 7rem;
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* width: 7rem; */
+}
+
+.logo-color {
+  color: var(--theme-color);
 }
 
 .menu-btn {
@@ -81,6 +87,7 @@ nav {
   width: 65%;
   height: 100%;
   border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   transform: translateX(-100%);
   transition: 0.3s;
 }
@@ -131,6 +138,7 @@ nav {
     width: auto;
     height: auto;
     border-right: none;
+    border-bottom: none;
     transform: none;
   }
 
@@ -139,6 +147,19 @@ nav {
     margin: 0 3px;
     border-bottom: none;
     font-size: 1.1rem;
+  }
+
+  .nav-link-btn {
+    color: var(--theme-color);
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--theme-color);
+  }
+
+  .nav-link-btn:hover {
+    color: #fff;
+    background: var(--theme-color);
+    transition: 0.2s;
   }
 
   .nav-control-show {

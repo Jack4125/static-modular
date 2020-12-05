@@ -43,6 +43,11 @@ html {
   border: 1px solid #ccc;
 }
 
+.cards-list-item:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+
 /* .cards-list-item img {
   width: 70px;
 } */
