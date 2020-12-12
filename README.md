@@ -5,8 +5,3 @@ Just copy and paste the HTML, CSS, and JavaScript of the needed website componen
 <!-- Interesting styles -->
 <!-- https://nicepage.com/c/pets-animals-html-templates -->
 <!-- https://ak.hypergryph.com/index -->
-
-<!--
-  background: #f6eee2;
-  color: #084D60;
--->

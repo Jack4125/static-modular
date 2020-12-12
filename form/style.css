@@ -1,5 +1,5 @@
 :root {
-  --theme-color: rgb(162, 38, 187);
+  --theme-color: #3376b9;
 }
 * {
   box-sizing: border-box;
@@ -24,11 +24,41 @@ html {
  */
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
+/* .btn-wrap {
+  text-align: center;
+  margin-top: 2rem;
+} */
+
+.btn-1 {
+  font-size: 1.2rem;
+  padding: 0.9rem 2.3rem;
+  cursor: pointer;
+  background: var(--theme-color);
+  border: 2px solid var(--theme-color);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn-1:hover {
+  background: transparent;
+  border: 2px solid var(--theme-color);
+  color: var(--theme-color);
+}
+
+.btn-overwrite-name {
+  margin-top: 3rem;
+}
+
 /* form */
+::placeholder {
+  color: #afafaf;
+  opacity: 1; /* firefox */
+}
+
 form {
   max-width: 600px;
   padding: 2rem;
@@ -61,19 +91,10 @@ textarea {
 
 .btn-right {
   text-align: right;
-}
-
-.form-btn {
-  font-size: 1.2rem;
-  padding: 0.7rem 1.6rem;
   margin-top: 2rem;
-  background: var(--theme-color);
-  border: 1px solid var(--theme-color);
-  color: #fff;
-  cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   html {
     font-size: 16px;
   }

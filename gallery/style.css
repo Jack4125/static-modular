@@ -1,5 +1,5 @@
 :root {
-  --theme-color: rgb(162, 38, 187);
+  --theme-color: #3376b9;
 }
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ html {
  */
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -67,11 +67,11 @@ html {
 }
 
 .img-list-item img:hover {
-  transform: scale(1.1, 1.1);
-  transition: 0.3s;
+  transform: scale(1.05, 1.05);
+  transition: 0.4s;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   html {
     font-size: 16px;
   }

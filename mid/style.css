@@ -23,15 +23,15 @@ html {
 /*
  * utilities
  */
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-.btn-wrap {
-  text-align: center;
-  margin-top: 2rem;
+.section-bg {
+  background-color: #fffaf1;
 }
 
 .btn-1 {
@@ -51,35 +51,37 @@ html {
 }
 
 .btn-overwrite-name {
-  margin-top: 3rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
 }
 
-/* showcase */
-.showcase {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('images/mobile.jpg') no-repeat center;
-  background-size: cover; */
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ccc;
-}
-
-.showcase-content {
-  height: 550px;
+/* mid */
+.mid {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
+  padding: 4rem 0 5rem 0;
 }
 
-.showcase h1 {
-  font-size: 3rem;
+.mid h2 {
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
-  /* text-shadow: 0 0 5px var(--theme-color); */
 }
 
-.showcase p {
+.mid form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.mid input {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.mid p {
   font-size: 1.2rem;
   /* text-shadow: 0 0 5px var(--theme-color); */
 }
@@ -95,12 +97,12 @@ html {
     font-size: 16px;
   }
 
-  .btn-wrap {
-    text-align: start;
+  .mid form {
+    display: flex;
+    flex-flow: row nowrap;
   }
 
-  /* showcase */
-  /* .showcase {
-    background: url('images/desktop.jpg') no-repeat center;
-  } */
+  .mid input {
+    width: 350px;
+  }
 }

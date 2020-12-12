@@ -8,16 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- re captcha -->
-  <!-- https://developers.google.com/recaptcha/docs/v3 -->
-  <!-- https://www.google.com/recaptcha/admin/create -->
-
   <body>
     <!-- start -->
 
     <!-- form -->
     <section>
-      <form>
+      <form id="contact-form">
         <h2>Contact</h2>
         <div class="form-group">
           <label for="user-email">Email address</label>
@@ -37,11 +33,25 @@
         </div>
         <div class="form-group">
           <label for="user-message">Example textarea</label>
-          <textarea id="user-message" rows="3"></textarea>
+          <textarea
+            id="user-message"
+            rows="3"
+            placeholder="Your message..."
+          ></textarea>
         </div>
 
         <div class="btn-right">
-          <button class="form-btn" type="submit">Submit</button>
+          <!-- https://developers.google.com/recaptcha/docs/v3 -->
+          <!-- https://www.google.com/recaptcha/admin/site/436408100/setup -->
+          <button
+            class="btn-1 g-recaptcha"
+            type="submit"
+            data-sitekey="6LckDwMaAAAAAB3N9ZzZUbd7zQCyo3ssJPBsAQI2"
+            data-callback="onSubmit"
+            data-action="submit"
+          >
+            Submit
+          </button>
         </div>
       </form>
     </section>
@@ -49,5 +59,11 @@
     <!-- end -->
 
     <script src="script.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById('contact-form').submit();
+      }
+    </script> -->
   </body>
 </html>
