@@ -49,10 +49,6 @@ html {
   color: var(--theme-color);
 }
 
-.btn-overwrite-name {
-  margin-top: 3rem;
-}
-
 /* form */
 ::placeholder {
   color: #afafaf;
@@ -89,9 +85,13 @@ textarea {
   border: 1px solid #ccc;
 }
 
-.btn-right {
+.form-btn-right {
   text-align: right;
   margin-top: 2rem;
+}
+
+.form-btn-overwrite {
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 700px) {

@@ -15,37 +15,30 @@ a {
 ul {
   list-style: none;
 }
+html {
+  font-size: 14px;
+}
 
 /*
  * utilities
  */
 .container {
   width: 90%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 
-/* policy */
-.policy {
-  margin: 2rem auto;
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
 }
-
-.policy h1,
-.policy h2,
-.policy h3,
-.policy h4 {
-  margin-bottom: 1rem;
-  color: var(--theme-color);
-}
-
-.policy h1 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
-.policy p {
-  padding-bottom: 1rem;
-  font-size: 1.2rem;
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 @media screen and (min-width: 700px) {
@@ -53,5 +46,4 @@ ul {
     font-size: 16px;
   }
 
-  /* policy */
 }
