@@ -35,3 +35,26 @@ phone.forEach(item => {
   item.innerHTML = `${cryptTwo[2]}${cryptOne[3]}`;
   item.href = `${cryptTwo[0]}${cryptOne[1]}${cryptTwo[2]}${cryptOne[3]}`;
 });
+
+// IO
+document.querySelectorAll('.services-message').forEach((target) => {
+  const options = {
+    threshold: 0.3,
+  };
+
+  // 1. input entries = 'item being observed' and observer = 'view port (in this case)'
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      console.log('count');
+
+      // 2. execute when 'entry' item 'isIntersecting' with 'observer' viewport
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade');
+        // * disconnect to stop repeated execution
+        observer.disconnect();
+      }
+    });
+  }, options);
+
+  io.observe(target); // 3. apply 'io' to observe the images
+});

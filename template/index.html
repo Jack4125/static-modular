@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <!-- https://www.drawspace.com/ -->
   </head>
 
@@ -95,13 +100,31 @@
       <div class="container">
         <div class="services">
           <img src="images/mobile.jpg" alt="services" />
-          <div class="services-message services-left">
-            <p class="p-special">Lorem ipsum dolor sit amet.</p>
-            <h2>Stop Dreaming,<br />Start Drawing.</h2>
+          <div class="services-message services-left fade-initial">
+            <p class="p-special">Special description for section.</p>
+            <h2>Stop Procrastinating,<br />Start Working.</h2>
             <p>
               Whether you want to learn a new skill, spark your creativity, or
-              boost your memory, Drawspace lessons are designed to benefit
-              people of all ages and skill levels.
+              boost your memory, our lessons are designed to benefit people of
+              all ages and skill levels.
+            </p>
+            <a class="link-btn" href="#">Find out more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- <img src="images/mobile.jpg" alt="background" /> -->
+      <div class="container">
+        <div class="services">
+          <img class="services-left" src="images/mobile.jpg" alt="services" />
+          <div class="services-message fade-initial">
+            <p class="p-special">Special description for section.</p>
+            <h2>Stop Procrastinating,<br />Start Working.</h2>
+            <p>
+              Whether you want to learn a new skill, spark your creativity, or
+              boost your memory, our lessons are designed to benefit people of
+              all ages and skill levels.
             </p>
             <a class="link-btn" href="#">Find out more</a>
           </div>
@@ -110,7 +133,7 @@
     </section>
 
     <!-- mid -->
-    <section>
+    <section class="section-bg-1">
       <div class="container">
         <div class="mid">
           <h2>Connect With Us</h2>
@@ -129,65 +152,92 @@
     </section>
 
     <!-- pricing -->
-    <section>
+    <section class="pricing">
       <div class="container">
-        <ul class="pricing-wrapper">
-          <li class="pricing-plan">
-            <div class="pricing-card">
-              <h4 class="pricing-header">Free</h4>
-              <div class="pricing-cost">
-                <span class="pricing-bold">$0</span>/day
-              </div>
+        <ul class="pricing-options">
+          <li class="pricing-card">
+            <h4 class="pricing-header">Free</h4>
+            <div class="pricing-cost">
+              $<span class="pricing-bold">0</span>/day
             </div>
             <ul class="pricing-list">
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
             </ul>
+            <a class="link-btn" href="#">Find out more</a>
           </li>
-          <li class="pricing-plan">
-            <div class="pricing-card">
-              <h4 class="pricing-header">Standard</h4>
-              <div class="pricing-cost">
-                <span class="pricing-bold">$10</span>/day
-              </div>
+          <li class="pricing-card">
+            <h4 class="pricing-header">Standard</h4>
+            <div class="pricing-cost">
+              $<span class="pricing-bold">10</span>/day
             </div>
             <ul class="pricing-list">
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
             </ul>
+            <a class="link-btn" href="#">Find out more</a>
           </li>
-          <li class="pricing-plan">
-            <div class="pricing-card">
-              <h4 class="pricing-header">Plus</h4>
-              <div class="pricing-cost">
-                <span class="pricing-bold">$20</span>/day
-              </div>
+          <li class="pricing-card">
+            <h4 class="pricing-header">Plus</h4>
+            <div class="pricing-cost">
+              $<span class="pricing-bold">20</span>/day
             </div>
             <ul class="pricing-list">
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
               <li>
-                Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                <i class="fas fa-check"></i> Benefits of enrolling enrolling in
+                this payment plan.
               </li>
             </ul>
+            <a class="link-btn" href="#">Find out more</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section>
+      <div class="gallery container">
+        <h2 class="gallery-title">Gallery</h2>
+        <ul class="img-list">
+          <li class="img-list-item">
+            <img src="images/mobile.jpg" alt="1" />
+          </li>
+          <li class="img-list-item">
+            <img src="images/mobile.jpg" alt="2" />
+          </li>
+          <li class="img-list-item">
+            <img src="images/mobile.jpg" alt="3" />
+          </li>
+          <li class="img-list-item">
+            <img src="images/mobile.jpg" alt="4" />
           </li>
         </ul>
       </div>
@@ -241,3 +291,25 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- https://developers.google.com/recaptcha/docs/v3 -->
+<!-- https://www.google.com/recaptcha/admin/site/436408100/setup -->
+
+<!-- 
+<button
+  class="btn-1 g-recaptcha"
+  type="submit"
+  data-sitekey="6LckDwMaAAAAAB3N9ZzZUbd7zQCyo3ssJPBsAQI2"
+  data-callback="onSubmit"
+  data-action="submit"
+>Submit</button> 
+-->
+
+<!-- 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+  function onSubmit(token) {
+    document.getElementById('contact-form').submit();
+  }
+</script> 
+-->
