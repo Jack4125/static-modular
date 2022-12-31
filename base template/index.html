@@ -132,23 +132,56 @@
       </div>
     </section>
 
-    <!-- mid -->
+    <!-- subscribe form -->
     <section class="section-bg-1">
       <div class="container">
-        <div class="mid">
+        <div class="subscribe">
           <h2>Connect With Us</h2>
           <form>
             <input
               type="email"
               class="form-control"
-              id="subscribe"
+              id="subscribe-email"
               placeholder="example@email.com"
             />
-            <button class="btn-1 mid-btn-overwrite">Subscribe</button>
+            <button class="btn">Subscribe</button>
           </form>
           <p>Receive updates & information!</p>
         </div>
       </div>
+    </section>
+
+    <!-- message form -->
+    <section>
+      <h2>Send a Message</h2>
+      <form class="message-form">
+        <div class="form-group">
+          <label for="user-email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="user-email"
+            placeholder="email"
+          />
+        </div>
+        <div class="message-group">
+          <label for="multiple-choice">Example multiple select</label>
+          <select id="multiple-choice" multiple>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="user-message">Example textarea</label>
+          <textarea
+            id="user-message"
+            rows="3"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
     </section>
 
     <!-- pricing -->
@@ -224,19 +257,19 @@
 
     <!-- gallery -->
     <section>
-      <div class="gallery container">
-        <h2 class="gallery-title">Gallery</h2>
-        <ul class="img-list">
-          <li class="img-list-item">
+      <div class="gallery">
+        <h2>Gallery</h2>
+        <ul class="gallery-list">
+          <li class="gallery-item">
             <img src="images/mobile.jpg" alt="1" />
           </li>
-          <li class="img-list-item">
+          <li class="gallery-item">
             <img src="images/mobile.jpg" alt="2" />
           </li>
-          <li class="img-list-item">
+          <li class="gallery-item">
             <img src="images/mobile.jpg" alt="3" />
           </li>
-          <li class="img-list-item">
+          <li class="gallery-item">
             <img src="images/mobile.jpg" alt="4" />
           </li>
         </ul>
